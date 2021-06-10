@@ -382,7 +382,7 @@ a:focus {
 	background-size: cover;
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1900px) {
 
 	.intro__90 {
 	    bottom: 0;
@@ -421,7 +421,7 @@ a:focus {
 	    width: 96vh;
 	    position: absolute;
 	    height: 1.8em;
-	   	left: -27.9em;
+	   	left: -27.9em !important;
 	    padding: 0;
 	    border-bottom: 0px;
 	}
@@ -439,15 +439,15 @@ a:focus {
 	}
 
 	.menu-aside li {
-	    margin: 0 23vh;
+	    margin: 0 auto !important;
 	}
 
 	.footer {
 	    position: absolute;
-	    bottom: 0.8em;
+	    bottom: 0.8em !important;
 	    left: 0;
 	    width: 100%;
-	    padding-left: 15em;
+	    padding-left: 15em !important;
 	}
 
 	.menu-aside li span {
