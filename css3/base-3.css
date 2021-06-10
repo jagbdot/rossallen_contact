@@ -233,6 +233,7 @@ body {
 }
 
 
+
 @media screen and (max-width: 850px) {
 	.circle-mark{
 		width: 50px !important;
@@ -381,13 +382,13 @@ a:focus {
 	background-size: cover;
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1800px) {
 
 	.intro__90 {
 	    bottom: 0;
 	    /* padding: 0.8em; */
 	    left: 1em;
-	    width: 8em;
+	    width: 9em;
 	    padding: 0;
 	    position: absolute;
 	    z-index: 99;
@@ -417,12 +418,16 @@ a:focus {
 	    justify-content: center;
 	    align-items: center;
 	    list-style: none;
-	    width: 97vh;
+	    width: 96vh;
 	    position: absolute;
 	    height: 1.8em;
-	    left: -21em;
+	   	left: -27.9em;
 	    padding: 0;
-	    border-bottom: 1px solid white;
+	    border-bottom: 0px;
+	}
+
+	.menu-aside li {
+    	margin: 0 auto;
 	}
 
 	.footer {
@@ -435,7 +440,6 @@ a:focus {
 
 	.menu-aside li {
 	    margin: 0 23vh;
-	    min-width: 12em;
 	}
 
 	.footer {
@@ -443,13 +447,13 @@ a:focus {
 	    bottom: 0.8em;
 	    left: 0;
 	    width: 100%;
-	    padding-left: 14em;
+	    padding-left: 15em;
 	}
 
 	.menu-aside li span {
-	    font-size: 10px;
+	    font-size: 8.9px;
 	    font-family: made_outer_sans !important;
-	    font-weight: 500 !important;
+	    font-weight: 400 !important;
 	}
 
 }
@@ -562,6 +566,7 @@ a:focus {
 
 	.frame__back img{
 	    width: 1.2em;
+	    height: 1.2em;
 	    margin-right: 0.6em;
 	    position: relative;
 	    top: 0.2em;
