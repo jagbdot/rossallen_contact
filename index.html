@@ -7,30 +7,46 @@
 		<meta name="description" content="A set of fun effects for mouse-following image trails." />
 		<meta name="keywords" content="image trail, effect, web design, mouse, javascript, gsap" />
 		<meta name="author" content="Codrops" />
+		<!--Favicon-->
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://use.typekit.net/lpe8txe.css">
 		<link rel="stylesheet" href="https://use.typekit.net/vts4lgd.css">
+
+		<!--CSS Styles-->
+		<link rel="stylesheet" href="css3/style.css">
 		<link rel="stylesheet" type="text/css" href="css3/base-3.css" />
 		<link rel="stylesheet" type="text/css" href="fonts3/stylesheet.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script></head>
+		<!--Page Transition-->
+		<link href="css3/m-pagetransition-styles.css" type="text/css" rel="stylesheet" />
+		<!--Scrollreveal-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+	  	<!--Warning-->
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+		</script>
+	</head>
+
 	<body class="demo-6 loading">
-		<main>
+
+		<main class="appear">
 			<div class="message">Hover effect &mdash; please view on desktop.</div>
-			<div class="frame">
+
 				<a class="frame__back" href="https://jagbdot.github.io/rossallen/"><img src="img3/close-2.png" alt="">Back to work</a>
-				<a class="frame__github" href="https://jagbdot.github.io/FV_Rossallen/"><img class="circle-mark" src="img/circle-mark-2.png" alt=""></a>
 				<div class="aside">
 					<div class="intro__90">
 						<h1 class="intro__90__title">Ross Allen</h1>
 						<div class="menu__container">
-							<ul class="menu-aside" data-scroll-section-inview="" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 619, 0, 1); opacity: 1; pointer-events: all;">
-								<li><a href="https://jagbdot.github.io/rossallen/"><span>Homesite</span><span class="number">(a)</span></a></li>
-								<li><a href="https://jagbdot.github.io/rossallen/index6.html"><span>About Ross Allen Film</span><span class="number">(b)</span></a></li>
-								<li><a href="https://jagbdot.github.io/rossallen_contact/"><span>Contact</span><span class="number">(c)</span></a></li>
+							<ul class="menu-aside transform-border-hairline" data-scroll-section-inview="" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 619, 0, 1); opacity: 1; pointer-events: all;">
+								<li><a class='transition' href="https://jagbdot.github.io/rossallen/"><span>Homesite</span><span class="number">(a)</span></a></li>
+								<li><a class='transition' href="https://jagbdot.github.io/rossallen/index6.html"><span>About Ross Allen Film</span><span class="number">(b)</span></a></li>
+								<li><a class="transition" href="https://jagbdot.github.io/rossallen_contact/" data-link="https://jagbdot.github.io/rossallen_contact/"><span>Contact</span><span class="number">(c)</span></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
+			<div class="frame">
+
 
 				<div class='footer'>
 						<div class='footer__section'>
@@ -59,17 +75,40 @@
 				</div>
 			</div>
 
+
+
 			<div class="content">
-				<div class="content__img content__img--full" style="background-image:url(img3/bg14.jpg);"></div>
-				<div class="content__img content__img--full" style="background-image:url(img3/bg4.jpg);"></div>
-				<div class="content__img content__img--full" style="background-image:url(img3/bg5.jpg);"></div>
-				<div class="content__img content__img--full" style="background-image:url(img3/bg6.jpg);"></div>
-				<div class="content__img content__img--full" style="background-image:url(img3/bg9.jpg);"></div>
-				<div class="content__img content__img--full" style="background-image:url(img3/bg10.jpg);"></div>
-			
+				<div class="content__img content__img--full" style="background-image:url(img3/last/1.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/13.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/4.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/12.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/3.png);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/8.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/rsz_f67.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/10.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/14.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/7.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/15.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/rsz_f62.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/rsz_6.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/16.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/9.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/17.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/18.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/rsz_f72.jpg);"></div>
+				<div class="content__img content__img--full" style="background-image:url(img3/last/19.jpg);"></div>
+
 			</div><!--/content-->
 		</main>
-		<script src="js3/imagesloaded.pkgd.min.js"></script>
-		<script src="js3/TweenMax.min.js"></script>
-		<script src="js3/demo6.js"></script></body>
+
+		<script type="text/javascript" src="js3/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js3/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js3/demo6.js"></script></body>
+		<script type="text/javascript" src="js3/m-pagetransition.js"></script>
+		<!--Scrollreveal-->
+		<script>
+			ScrollReveal().reveal('.appear', { delay: 250, duration: 2000 });
+		</script>
+
+	</body>
 </html>
