@@ -139,7 +139,7 @@ body {
     bottom: 0;
     /* padding: 0.8em; */
     padding-left: 0.5em;
-    width: 8.5em;
+    width: 2.9em;
     left: -2px;
     padding: 0;
     position: absolute;
@@ -179,7 +179,7 @@ body {
 -90deg
 );
     white-space: nowrap;
-    letter-spacing: -1.7px;
+
     font-size: 15vh;
     text-transform: uppercase;
     font-family: "gotham", sans;
@@ -209,8 +209,8 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 95vh;
-    height: 1.8em;
+    width: 94vh;
+    height: 10px;
     top: auto;
     position: absolute;
     padding: 0;
@@ -230,10 +230,10 @@ body {
 }
 
 .menu-aside li span {
-    font-size: 1.2vh;
+    font-size: 13.2px;
     font-family: made_outer_sans !important;
-    letter-spacing: 0.5px;
-    font-weight: 100 !important;
+  
+    font-weight: 400 !important;
 }
 
 .menu-aside li a {
@@ -747,7 +747,7 @@ a:focus {
 
 
 	.menu-aside li span {
-	    font-size: 12.9px;
+	    font-size: 13.2px;
 	    font-family: made_outer_sans !important;
 	    font-weight: 400 !important;
 	}
@@ -851,7 +851,7 @@ a:focus {
 	    margin-left: auto;
 	    display: block;
 	    top: 2.2em;
-	    right: 0;
+	    right: 3px;
 	    text-decoration: underline;
 	    text-transform: uppercase;
 	    font-family: made_outer_sans;
@@ -917,6 +917,6 @@ a:focus {
 
 @media screen and (max-width: 1360px){
 	.intro__90 {
-	    width: 3.5em;
+	    width: 2.9em;
 	}
 }
