@@ -4,9 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Contact Ross</title>
-		<meta name="description" content="A set of fun effects for mouse-following image trails." />
-		<meta name="keywords" content="image trail, effect, web design, mouse, javascript, gsap" />
-		<meta name="author" content="Codrops" />
+
+		<meta name="description" content="Ross Allen is an award winning commercial and film director." />
+		<meta property="og:url" content="https://rossallenfilm.com">
+		<meta name="image" property="og:image" content="https://i.postimg.cc/SKKnj65g/yes3.png">
+        <meta name="image_src" content="https://i.postimg.cc/SKKnj65g/yes3.png" />
+        <meta name="image_url" content="https://i.postimg.cc/SKKnj65g/yes3.png" />
+        <meta name="title" content="Contact Ross">
+		<meta name="author" content="Ross Allen" />
+		<meta name="keywords" content="contact, films, rossallen, filmsupply, Canada, Vancouver, director, commercial, Radke, Good-Idea, Commercial Director" />
+		<meta property="og:site_name" content="Contact Ross">
+		<meta property="og:title" content="Ross Allen Film">
+		<meta property="og:description" content="Ross Allen is an award winning commercial and film director.">
+		<meta property="og:image" itemprop="image" content="https://i.postimg.cc/SKKnj65g/yes3.png">
+		<meta property="og:type" content="website" />
+		<meta property="og:image:secure_url" content="https://i.postimg.cc/SKKnj65g/yes3.png" />
+		<meta property="og:image:type" content="image/jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Ross Allen is an award winning commercial and film director." />
+		<meta name="twitter:title" content="Contact Ross">
+		<meta name="twitter:description" content="Ross Allen is an award winning commercial and film director.">
+		<meta name="twitter:image" content="https://i.postimg.cc/SKKnj65g/yes3.png">
+
 		<!--Favicon-->
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://use.typekit.net/lpe8txe.css">
@@ -18,6 +38,8 @@
 		<link rel="stylesheet" type="text/css" href="fonts3/stylesheet.css" />
 		<!--Page Transition-->
 		<link href="css3/m-pagetransition-styles.css" type="text/css" rel="stylesheet" />
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!--Scrollreveal-->
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -30,17 +52,32 @@
 	<body class="demo-6 loading">
 
 		<main class="appear">
-			<div class="message">Hover effect &mdash; please view on desktop.</div>
+		<header>
+		  <button class="hamburger">&#9776;</button>
+		  <button class="cross">&#735;</button>
+		</header>
 
-				<a class="frame__back" href="https://jagbdot.github.io/rossallen/"><img src="img3/close-2.png" alt="">Back to work</a>
+		<div class="menu-mobile">
+		  <ul>
+		    <a href="index.html"><li>WORK</li></a>
+		    <a href="about.html"><li>ABOUT</li></a>
+		    <a href="https://contact.rossallenfilm.com/"><li>CONTACT</li></a>
+		    <a target="_blank" href="https://www.instagram.com/rossallenfilm/"><li>INSTAGRAM</li></a>
+		    <a target="_blank" href="https://vimeo.com/rossallen"><li>VIMEO</li></a>
+		  </ul>
+		</div> 
+
+			<div class="message">Hover images &mdash; please view on desktop to see the full effect.</div>
+
+				<a class="frame__back" href="https://rossallenfilm.com/"><img src="img3/close-2.png" alt="">Back to work</a>
 				<div class="aside">
 					<div class="intro__90">
 						<h1 class="intro__90__title"></h1>
 						<div class="menu__container">
 							<ul class="menu-aside transform-border-hairline" data-scroll-section-inview="" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 619, 0, 1); opacity: 1; pointer-events: all;">
-								<li><a class='transition' href="https://jagbdot.github.io/rossallen/"><span>Work</span><span class="number">(a)</span></a></li>
-								<li><a class='transition' href="https://jagbdot.github.io/rossallen/index6.html"><span>About</span><span class="number">(b)</span></a></li>
-								<li><a class="transition" href="https://jagbdot.github.io/rossallen_contact/" data-link="https://jagbdot.github.io/rossallen_contact/"><span>Contact</span><span class="number">(c)</span></a></li>
+								<li><a class='transition' href="https://rossallenfilm.com/"><span>Work</span><span class="number">(a)</span></a></li>
+								<li><a class='transition' href="https://rossallenfilm.com/about"><span>About</span><span class="number">(b)</span></a></li>
+								<li><a class="transition" href="https://contact.rossallenfilm.com" data-link="https://contact.rossallenfilm.com"><span>Contact</span><span class="number">(c)</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -106,6 +143,26 @@
 		<script>
 			ScrollReveal().reveal('.appear', { delay: 250, duration: 2000 });
 		</script>
+	<script>
+$( document ).ready(function() {
 
+$( ".cross" ).hide();
+$( ".menu-mobile" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu-mobile" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu-mobile" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+	</script>
 	</body>
 </html>
